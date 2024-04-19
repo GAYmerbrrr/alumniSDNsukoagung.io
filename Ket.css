@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+body{
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*navbar*/
+svg{
+  width: 90px;
+}
+
+#closeBtn{
+  float: right;
+}
+
+.dftr-mnu{
+  margin-top: 100px;
+  color: black;
+}
+
+.side-menu a{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+
+.side-menu{
+  transition: width 0.6s ease;
+  overflow-y: hidden;
+  padding-left: 20px;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  height: 100%;
+  position: fixed;
+  font-size: 3em;
+  background-color: #DDDDDD;
+}
+
+.side-menu p{
+  margin-top: 70px;
+  color: black;
+  font-size: .7em;
+}
+
+.nav{
+  color: white;
+  justify-content: space-between;
+}
+
+.btns{
+  font-size: 3.8em;
+  margin-right: 50px;
+}
+
+.ab{
+  margin-left: 25px;
+  font-size: 3.4em;
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/*navbar end*/
+
+
+/*konten*/
+.kontainer-konten{
+  margin-top: 50%;
+  width: 100%;
+}
+
+.kontainer-konten img{
+  z-index: -999;
+  position: fixed;
+  top: 0;
+  max-width: 100%;
+}
+
+.kal{
+  margin: auto;
+  backdrop-filter: blur(20px);
+  width: 70%;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+.kal h2{
+  font-size: 2.4em;
+}
+
+.kal p{
+  font-size: 18px;
+}
+
+.notes,
+.bg-stry,
+.credit{
+  margin bottom: 60px;
+}
+/*konten end*/
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .kontainer-konten > img{
+    z-index: -999;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  .smbtn {
+    padding-top: 150px; /* Menyesuaikan jarak dari atas pada tablet */
+  }
+
+  section > div {
+    top: 30%; /* Menyesuaikan posisi vertikal div pada tablet */
+  }
+
+  section h2 {
+    font-size: 4em; /* Meningkatkan ukuran font pada tablet */
+  }
+}

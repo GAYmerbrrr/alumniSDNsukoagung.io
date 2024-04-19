@@ -188,6 +188,7 @@ button{
   }
   
   button{
+    margin-bottom: 20px;
     border: none;
     background-color: #76885B;
   }

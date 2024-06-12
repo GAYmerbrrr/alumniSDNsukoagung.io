@@ -112,7 +112,7 @@ section h2 {
 }
 
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
   
   .smbtn {
     transform: translate(0, 50%);

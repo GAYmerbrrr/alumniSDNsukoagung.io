@@ -147,7 +147,7 @@ svg {
   font-size: 25px;
 }
 .mother {
-  width: 70%;
+  width: 60%;
   margin: auto;
 }
 
@@ -158,7 +158,7 @@ svg {
 }
 /*konten end*/
 
-@media (max-width: 600px) {
+@media (max-width: 767px) {
 
   .mother {
     width: 100%;

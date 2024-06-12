@@ -1,31 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-body{
-  font-family: "Jersey 25", sans-serif;
+body {
   font-weight: 400;
   font-style: normal;
+  background-image: url('OIP.jpg');
 }
 
 /*navbar*/
-svg{
+svg {
   width: 90px;
 }
 
-#closeBtn{
+#closeBtn {
   float: right;
 }
 
-.dftr-mnu{
+.dftr-mnu {
   margin-top: 100px;
   color: black;
 }
 
-.side-menu a{
+.side-menu a {
   margin-top: 20px;
   margin-left: 5px;
 }
 
-.side-menu{
+/* .side-menu{
   transition: width 0.6s ease;
   overflow-y: hidden;
   padding-left: 20px;
@@ -34,7 +34,7 @@ svg{
   z-index: 999;
   height: 100%;
   position: fixed;
-  font-size: 3em;
+  font-size: 1.7em;
   background-color: #DDDDDD;
 }
 
@@ -47,16 +47,67 @@ svg{
 .nav{
   color: white;
   justify-content: space-between;
-}
+}*/
 
-.btns{
-  font-size: 3.8em;
+.btns {
+  display: none;
+  line-height: 3rem;
+  font-size: 1.6em;
   margin-right: 50px;
 }
 
-.ab{
+.side-menu {
+  display: none;
+  /* transition: width 0.6s ease;
+  overflow-y: hidden;
+  padding-left: 20px;
+  z-index: 999;
+  height: 100%;
+  position: fixed;
+  font-size: 1.7em;
+  background-color: #DDDDDD; */
+}
+
+.navi {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  color: white;
+  width: fit-content;
+}
+
+.navigation {
+  margin-right: 18px;
+}
+
+.navigation li a {
+  font-size: 1em;
+  font-weight: 100;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li {
+  padding-right: 6px;
+  line-height: 3rem;
+  display: inline-block;
+  list-style: none;
+}
+
+.navigation li a:hover {
+  background-color: white;
+  color: black;
+  transition: .2s ease-in;
+  border-radius: 5px;
+}
+
+.ab {
   margin-left: 25px;
-  font-size: 3.4em;
+  font-size: 1.9em;
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -65,44 +116,56 @@ svg{
 
 
 /*konten*/
-.kontainer-konten{
+.kontainer-konten {
+  font-family: "Jersey 25", sans-serif;
   margin-top: 50%;
   width: 100%;
 }
 
-.kontainer-konten img{
+.kontainer-konten img {
   z-index: -999;
-  position: fixed;
+  position: absolute;
   top: 0;
   max-width: 100%;
 }
 
-.kal{
+.kal {
   margin: auto;
   backdrop-filter: blur(20px);
   width: 70%;
-  padding: 20px;
+  height: fit-content;
+  padding: 20px 20px 0 20px;
   text-align: center;
   color: white;
 }
 
-.kal h2{
+.kal h2 {
   font-size: 2.4em;
 }
 
-.kal p{
-  font-size: 18px;
+.kal p {
+  font-size: 20px;
+}
+.mother {
+  width: 60%;
+  margin: auto;
 }
 
 .notes,
 .bg-stry,
-.credit{
-  margin bottom: 60px;
+.credit {
+  margin-bottom: 60px;
 }
 /*konten end*/
 
-@media (min-width: 769px) and (max-width: 1200px) {
-  .kontainer-konten > img{
+@media (max-width: 767px) {
+
+  .mother {
+    width: 100%;
+    margin: 0;
+  }
+
+  .kontainer-konten > img {
     z-index: -999;
     position: fixed;
     top: 0;
@@ -112,11 +175,37 @@ svg{
     padding-top: 150px; /* Menyesuaikan jarak dari atas pada tablet */
   }
 
+  .navigation {
+    display: none;
+  }
+
+  .side-menu {
+    font-family: "Jersey 25", sans-serif;
+    width: 0;
+    display: block;
+    transition: width 0.6s ease;
+    overflow-y: hidden;
+    padding-left: 20px;
+    z-index: 999;
+    height: 100%;
+    position: fixed;
+    font-size: 1.3em;
+    font-weight: 100;
+    background-color: #DDDDDD;
+  }
+
   section > div {
     top: 30%; /* Menyesuaikan posisi vertikal div pada tablet */
   }
 
   section h2 {
     font-size: 4em; /* Meningkatkan ukuran font pada tablet */
+  }
+
+  .btns {
+    color: white;
+    display: block;
+    font-size: 1.6em;
+    margin-right: 50px;
   }
 }

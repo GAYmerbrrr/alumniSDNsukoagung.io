@@ -174,7 +174,7 @@ button{
 
 
 /* Tambahkan aturan CSS ini untuk responsif  */
-@media (max-width: 767px) {
+@media (max-width: 600px) {
 
   body{
     background-color: #DDDDDD;

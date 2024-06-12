@@ -1,57 +1,99 @@
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
 
-body{
+body {
   color: white;
+  height: 100vh;
+  background-image: url("OIP.jpg");
+}
+
+.mother {
+  width: 55%;
+  height: 100vh;
+  margin: auto;
+  background-image: url(nn.jpeg);
 }
 
 /*navbar*/
-svg{
+svg {
   width: 90px;
 }
 
-#closeBtn{
+#closeBtn {
   float: right;
 }
 
-.dftr-mnu{
+.dftr-mnu {
   margin-top: 100px;
   color: black;
 }
 
-.side-menu a{
+.side-menu a {
   font-family: "Jersey 25", sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: normal;
   margin-top: 20px;
   margin-left: 5px;
 }
 
-.side-menu{
-  transition: width 0.6s ease;
+.side-menu {
+  display: none;
+  /* transition: width 0.6s ease;
   overflow-y: hidden;
   padding-left: 20px;
-  right: 0;
-  left: 0;
   z-index: 999;
   height: 100%;
   position: fixed;
-  font-size: 3em;
-  background-color: #DDDDDD;
+  font-size: 1.7em;
+  background-color: #DDDDDD; */
 }
 
-.nav{
-  color: white;
+.navi {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-.btns{
-  font-size: 3.8em;
-  margin-right: 50px;
+.nav {
+  color: white;
+  width: fit-content;
 }
 
-.ab{
+.navigation {
+  margin-right: 8px;
+}
+
+.navigation li a {
+  font-size: 1em;
+  font-weight: 200;
+  text-decoration: none;
+  color: white;
+}
+
+.navigation li {
+  padding-right: 6px;
+  line-height: 3rem;
+  display: inline-block;
+  list-style: none;
+}
+
+.navigation li a:hover {
+  background-color: white;
+  color: black;
+  transition: .2s ease-in;
+  border-radius: 5px;
+}
+
+.btns {
+  line-height: 3rem;
+  display: none;
+  /* font-size: 1.6em;
+  margin-right: 50px; */
+}
+
+.ab {
   margin-left: 25px;
-  font-size: 3.4em;
+  font-size: 1.9em;
   font-family: "Jersey 10", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -59,45 +101,52 @@ svg{
 /*navbar end*/
 
 
-section > div{
-  z-index: -97;
-  position: absolute;
-  top: 40%;
-  left: 10px;
-  height: 400px;
-}
-
-section h2{
+section h2 {
   font-family: "Jersey 25", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-section > img{
-  z-index: -999;
-  position: fixed;
-  top: 0;
-  max-width: 100%;
+.smbtn {
+  transform: translate(0, 100%);
 }
 
 
-/* Aturan CSS untuk tablet */
-@media (min-width: 769px) and (max-width: 1200px) {
-  section > img{
-    z-index: -999;
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+@media (max-width: 767px) {
+  
   .smbtn {
-    padding-top: 150px; /* Menyesuaikan jarak dari atas pada tablet */
+    transform: translate(0, 50%);
   }
 
-  section > div {
-    top: 30%; /* Menyesuaikan posisi vertikal div pada tablet */
+  .mother {
+    width: 100%;
+    margin: 0;
   }
 
   section h2 {
-    font-size: 4em; /* Meningkatkan ukuran font pada tablet */
+    font-size: 2.5em; 
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .side-menu {
+    display: block;
+    transition: width 0.6s ease;
+    overflow-y: hidden;
+    padding-left: 20px;
+    z-index: 999;
+    height: 100%;
+    position: fixed;
+    font-size: 1.3em;
+    font-weight: 100;
+    background-color: #DDDDDD;
+  }
+
+  .btns {
+    display: block;
+    font-size: 1.6em;
+    margin-right: 50px;
   }
 }

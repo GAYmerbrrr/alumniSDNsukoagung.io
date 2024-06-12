@@ -158,7 +158,7 @@ svg {
 }
 /*konten end*/
 
-@media (max-width: 767px) {
+@media (max-width: 600px) {
 
   .mother {
     width: 100%;
